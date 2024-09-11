@@ -51,7 +51,7 @@ h3 > a:any-link  {
   font-size: large;
 }
 
-h3 > a:any-link::after {
+.footer h3 > a:any-link::after {
   content: "";
   display: inline-block;
   width: 0;
@@ -64,11 +64,11 @@ h3 > a:any-link::after {
   transition: transform 0.3s ease, border-bottom-width 0.3s ease;
 }
 
-h3 > a:any-link:hover {
+.footer h3 > a:any-link:hover {
   text-decoration: underline;
 }
 
-h3 > a:any-link:hover::after {
+.footer h3 > a:any-link:hover::after {
   transform: scale(1.2) rotate(90deg);
   border-bottom-width: 8px;
 }
