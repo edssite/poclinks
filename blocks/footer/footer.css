@@ -3,7 +3,7 @@ footer {
   color: white;
   font-size: var(--body-font-size-xs);
   padding: 40px 24px 24px;
-  height: 500px;
+  height: 300px;
 }
 
 footer .footer > div {

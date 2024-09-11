@@ -19,7 +19,7 @@
 }
 
 .cards > ul > li:hover {
-  border: 1px solid blue; /* Border changes to blue on hover */
+  border: 1px solid black; /* Border changes to blue on hover */
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Optional shadow on hover */
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
