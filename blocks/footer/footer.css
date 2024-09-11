@@ -1,7 +1,7 @@
 footer {
-  background: linear-gradient(to bottom, rgb(16, 16, 16), rgb(56, 16, 16)); /* Gradient from black to blue */
+  background-color: rgb(58, 58, 58);
+  color: white;
   font-size: var(--body-font-size-xs);
-  color: white; /* Ensure text is readable on dark background */
 }
 
 footer .footer > div {
@@ -10,6 +10,15 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
+.footer > div  {
+  padding: 15px;
+  width: 40%;
+  font-size: x-small;
+}
+
+.footer > div > div {
+  padding-top: 20px;
+}
 footer .footer p {
   margin: 0;
 }
