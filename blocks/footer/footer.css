@@ -1,7 +1,9 @@
 footer {
-  background-color: rgb(58, 58, 58);
+  background: black;
   color: white;
   font-size: var(--body-font-size-xs);
+  padding: 40px 24px 24px;
+  height: 500px;
 }
 
 footer .footer > div {
@@ -16,8 +18,13 @@ footer .footer > div {
   font-size: x-small;
 }
 
-.footer > div > div {
-  padding-top: 20px;
+.footer-links {
+  display: flex;
+}
+
+h1 {
+  font-size: x-large;
+  width: 60%;
 }
 footer .footer p {
   margin: 0;
@@ -27,4 +34,41 @@ footer .footer p {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
+}
+
+
+/*H4 Button */
+h3 > a:any-link  {
+  background-color: transparent;
+  color: white;
+  font-size: small;
+  margin: 0;
+  padding: 1px;
+}
+
+.footer h2 {
+  color: white;
+  font-size: large;
+}
+
+h3 > a:any-link::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid red;
+  transform: rotate(90deg);
+  margin-left: 10px;
+  transition: transform 0.3s ease, border-bottom-width 0.3s ease;
+}
+
+h3 > a:any-link:hover {
+  text-decoration: underline;
+}
+
+h3 > a:any-link:hover::after {
+  transform: scale(1.2) rotate(90deg);
+  border-bottom-width: 8px;
 }
