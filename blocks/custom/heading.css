@@ -1,0 +1,62 @@
+.heading > div {
+    display: flex;
+}
+
+.heading-container {
+    background-color: rgb(240, 240, 240);
+}
+
+.heading > div > div:first-child {
+    flex-grow: 1; /* Let the first div take less space */
+    width: 900px;
+    padding: 20px;
+}
+
+.heading > div:first-child h3 {
+    /* Additional styles if needed */
+    font-size: x-large;
+}
+
+.heading > div > div:first-child p {
+    font-size: 13px;
+    color: rgb(52, 52, 52);
+    width: 400px;
+}
+
+.heading > div > div:last-child {
+    flex-grow: 2; /* Let the second div take more space */
+}
+
+.heading > div > div:last-child img {
+    width: 850px; /* Adjust width to make the image bigger */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.heading .button-container a.button:any-link {
+    background-color: var(--ibm-blue);
+    font-size: 13px;
+    color: white;
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 180px;
+    margin-top: 40px;
+}
+
+.heading .button-container a.button:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    font-weight: lighter; /* Adjust the weight as per your need */
+    margin-left: 50px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+}
+
+.heading .button-container a.button:any-link:hover {
+    background-color: var(--ibm-blue-hover);
+}
+  

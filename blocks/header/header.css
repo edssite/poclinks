@@ -1,10 +1,14 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--text-color);
-  color: var(--background-color);
+  background-color: white;
+  color: black;
   width: 100%;
   z-index: 2;
   position: fixed;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid var(--light-color);
 }
 
 header nav {
@@ -138,15 +142,22 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 
 /* brand */
 header .nav-brand {
+  width: 990px;
   grid-area: brand;
   flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  border-right: 1px solid rgb(197, 197, 197);
+}
+
+header .nav-brand .default-content-wrapper {
+  width: 170px;
+  font-size: 15px;
+  font-family: ibm-bold;
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 300px;
   height: auto;
 }
 
@@ -156,6 +167,7 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
+  color: gray;
 }
 
 header nav[aria-expanded='true'] .nav-sections {

@@ -10,14 +10,17 @@
  * governing permissions and limitations under the License.
  */
 
+ @import url('../blocks/custom/heading.css');
 :root {
   /* colors */
   --background-color: white;
-  --light-color: #040404;
+  --light-color: rgb(197, 197, 197);
   --dark-color: #505050;
   --text-color: black;
   --link-color: #acbcfd;
   --link-hover-color: #1d3ecf;
+  --ibm-blue: rgb(44, 96, 245);
+  --ibm-blue-hover: rgb(34, 82, 224);
 
   /* fonts */
   --body-font-family: ibm-regular, roboto-fallback, sans-serif;
