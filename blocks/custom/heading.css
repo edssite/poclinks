@@ -60,3 +60,66 @@
     background-color: var(--ibm-blue-hover);
 }
   
+
+h4 > a:any-link {
+    background-color: var(--ibm-blue);
+    font-size: 13px;
+    color: white;
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 180px;
+    margin-top: 20px;
+}
+
+h4 > a:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    font-weight: lighter; /* Adjust the weight as per your need */
+    margin-left: 50px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+}
+
+h4 > a:any-link:hover {
+    background-color: var(--ibm-blue-hover);
+    text-decoration: none;
+}
+
+h5 > a:any-link {
+    background-color: transparent;
+    font-size: 13px;
+    color: var(--ibm-blue);
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid var(--ibm-blue);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 180px;
+    margin-top: 20px;
+}
+
+h5 > a:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    font-weight: lighter; /* Adjust the weight as per your need */
+    margin-left: 50px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+}
+
+h5 > a:any-link:hover {
+    background-color: var(--ibm-blue-hover);
+    text-decoration: none;
+    color: white;
+}
+  
