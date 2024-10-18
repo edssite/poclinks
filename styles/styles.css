@@ -11,6 +11,9 @@
  */
 
  @import url('../blocks/custom/heading.css');
+ @import url('../blocks/custom/page-banner.css');
+ @import url('../blocks/custom/sector-left.css');
+ @import url('../blocks/custom/sector-left-dark.css');
 :root {
   /* colors */
   --background-color: white;
@@ -232,7 +235,7 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+
 }
 
 main > .section > div {

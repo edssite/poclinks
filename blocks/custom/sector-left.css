@@ -1,0 +1,139 @@
+.sector-left-container {
+    display: flex;
+    gap: 0; /* No gap between the divs */
+}
+
+.sector-left-wrapper {
+    flex-grow: 1; /* This makes the first div take the majority of the space */
+    flex-basis: 0; /* Allows it to grow properly */
+}
+
+.sector-right-wrapper {
+    flex-shrink: 0; /* Prevents it from shrinking too much */
+    flex-basis: 250px; /* Set a specific width for the second div */
+    max-width: 250px; /* Optional: Prevents it from exceeding a certain width */
+}
+
+
+.sector-left {
+    width: 100%;
+}
+
+.sector-left > div:first-child {
+    display: flex;
+    gap: 50px;
+}
+
+.sector-left > div:first-child > div:first-child h2 {
+ font-family: ibm-thin;
+}
+
+.sector-left > div:first-child > div:first-child p {
+    font-size: small;
+    width: 60%;
+    color: gray;
+}
+
+.sector-left > div:first-child > div:last-child img {
+    width: 300px;
+}
+
+
+.sector-left > div:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Make the CIBC and BMO divs look like buttons */
+.sector-left > div:last-child > div {
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    text-align: left; /* Center text inside the button */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 10px; /* Add rounded corners for a button look */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    font-size: x-small;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.sector-left > div:last-child > div img {
+    width: 100px;
+}
+
+.sector-left > div:last-child > div:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    background-color: #dbf3f9; /* Change background color on hover */
+    color: #333; /* Optionally, change text color on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow for more emphasis on hover */
+}
+
+/* Hide only the text inside <p>, but keep the <img> visible */
+.sector-left > div:last-child > div p {
+    margin: 0;
+    display: flex; /* Ensure the content inside the <p> can be targeted properly */
+    align-items: center; /* Align the text and image */
+}
+
+.sector-left > div:last-child > div p:not(:has(img)) {
+    opacity: 0; /* Hide the text */
+    visibility: hidden; /* Ensure it's not clickable */
+    transition: opacity 0.3s ease, visibility 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+}
+
+/* Show the text on hover */
+.sector-left > div:last-child > div:hover p:not(:has(img)) {
+    opacity: 1; /* Show the text */
+    visibility: visible; /* Make it visible */
+    font-size: 1.1em; /* Optional: increase the font size */
+}
+
+/* Adding the arrow icon using a pseudo-element */
+.sector-left > div:last-child > div::after {
+    content: "➔"; /* Unicode for an arrow pointing right */
+    font-size: 12px; /* Adjust size */
+    color: rgb(79, 79, 79); /* Color of the arrow */
+    position: absolute;
+    top: 10px; /* Position it in the top right */
+    right: 10px; /* Align it to the right */
+    transform: rotate(-45deg); /* Rotate the arrow to point top-right */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Optional: Add an effect when hovering over the button */
+.sector-left > div:last-child > div:hover::after {
+    transform: scale(1.2); /* Slightly increase size and keep rotation */
+}
+
+
+.sector-left > div:first-child > div:first-child a.button:any-link {
+    background-color: white;
+    font-size: 13px;
+    color: var(--ibm-blue);
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid var(--ibm-blue);
+}
+
+.sector-left > div:first-child > div:first-child a.button:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    font-weight: lighter; /* Adjust the weight as per your need */
+    margin-left: 50px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+}
+
+.sector-left > div:first-child > div:first-child a.button:any-link:hover {
+    background-color: var(--ibm-blue-hover);
+    color: whitesmoke;
+}
