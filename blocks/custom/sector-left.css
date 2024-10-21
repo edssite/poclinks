@@ -50,7 +50,6 @@
     background-color: rgb(235, 235, 235);
     padding: 30px;
     text-align: left; /* Center text inside the button */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
     border-radius: 10px; /* Add rounded corners for a button look */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
@@ -136,4 +135,14 @@
 .sector-left > div:first-child > div:first-child a.button:any-link:hover {
     background-color: var(--ibm-blue-hover);
     color: whitesmoke;
+}
+
+.sector-left h6 a:any-link {
+    background-color: transparent;
+    font-size: 10px;
+    color: rgb(46, 46, 46);
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    width: 100px;
 }

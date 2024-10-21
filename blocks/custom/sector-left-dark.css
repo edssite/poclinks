@@ -53,11 +53,9 @@
 
 /* Make the CIBC and BMO divs look like buttons */
 .sector-left-dark > div:last-child > div {
-    background-color: rgb(105, 105, 105);
-    border: 1px solid rgb(97, 136, 244);
+    background-color: rgb(134, 134, 134);
     padding: 30px;
     text-align: left; /* Center text inside the button */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
     border-radius: 10px; /* Add rounded corners for a button look */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
@@ -91,6 +89,17 @@
     transition: opacity 0.3s ease, visibility 0.3s ease, font-size 0.3s ease; /* Smooth transition */
 }
 
+.sector-left-dark h6 a:any-link {
+    background-color: transparent;
+    font-size: 10px;
+    color: white;
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    width: 100px;
+}
+
+
 /* Show the text on hover */
 .sector-left-dark > div:last-child > div:hover p:not(:has(img)) {
     opacity: 1; /* Show the text */
@@ -102,7 +111,7 @@
 .sector-left-dark > div:last-child > div::after {
     content: "➔"; /* Unicode for an arrow pointing right */
     font-size: 12px; /* Adjust size */
-    color: rgb(97, 136, 244); /* Color of the arrow */
+    color: rgb(255, 255, 255); /* Color of the arrow */
     position: absolute;
     top: 10px; /* Position it in the top right */
     right: 10px; /* Align it to the right */
@@ -117,6 +126,9 @@
 }
 
 
+/* BUTTONS */
+
+/* P Link */
 .sector-left-dark > div:first-child > div:first-child a.button:any-link {
     background-color: transparent;
     font-size: 13px;
@@ -144,4 +156,13 @@
 .sector-left-dark > div:first-child > div:first-child a.button:any-link:hover {
     background-color: rgb(97, 136, 244);
     color: whitesmoke;
+}
+
+
+/* H4 Link */
+
+
+
+.imagesection img {
+    width: 320px;
 }

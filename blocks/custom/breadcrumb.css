@@ -1,0 +1,31 @@
+.breadcrumb {
+    position: sticky;
+    top: 60px; /* Adjust this value to place it below the navbar */
+    background-color: white; /* Background to make it stand out */
+    padding: 10px 20px; /* Add some padding */
+    z-index: 100; /* Ensure it's above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a light shadow to emphasize it as a breadcrumb */
+    border-bottom: 1px solid #ddd; /* Optional: A subtle border at the bottom */
+}
+
+.breadcrumb h3 {
+    background-color: transparent;
+    font-size: 15px;
+    color: gray;
+    font-family: ibm-light;
+    display: inline-block;
+    margin: 0;
+}
+
+.breadcrumb h3 > a:any-link {
+    background-color: transparent;
+    font-size: 15px;
+    color: gray;
+    font-family: ibm-light;
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 5px; /* Space between breadcrumb items */
+}
+
+.breadcrumb h3 > a:any-link:hover {
+    color: black; /* Change color on hover for a breadcrumb effect */
+}

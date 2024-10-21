@@ -14,6 +14,9 @@
  @import url('../blocks/custom/page-banner.css');
  @import url('../blocks/custom/sector-left.css');
  @import url('../blocks/custom/sector-left-dark.css');
+ @import url('../blocks/custom/blue-banner.css');
+ @import url('../blocks/custom/breadcrumb.css');
+
 :root {
   /* colors */
   --background-color: white;
@@ -106,7 +109,6 @@ footer .footer[data-block-status="loaded"] {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -120,7 +122,6 @@ h6 {
 
 h1 { font-size: var(--heading-font-size-xxl); }
 h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }

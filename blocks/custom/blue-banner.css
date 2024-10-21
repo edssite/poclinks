@@ -1,0 +1,66 @@
+
+.blue-banner-wrapper {
+    background-color: rgb(22,22,22);
+    position: relative;
+
+}
+
+.blue-banner-container {
+    background-color: rgb(22,22,22);
+}
+
+.blue-banner {
+    padding: 50px;
+}
+
+.blue-banner h3 {
+    color: white;
+    font-size: 40px;
+    font-family: ibm-thin;
+}
+
+.blue-banner p {
+    color: whitesmoke;
+    font-size: small;
+    font-family: ibm-thin;
+    padding-bottom: 30px;
+}
+
+.blue-banner a.button:any-link {
+    background-color: var(--ibm-blue);
+    font-size: 13px;
+    color: white;
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid var(--ibm-blue);
+}
+
+.blue-banner a.button:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    font-weight: lighter; /* Adjust the weight as per your need */
+    margin-left: 50px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+}
+
+.blue-banner a.button:any-link:hover {
+    background-color: var(--ibm-blue-hover);
+    color: whitesmoke;
+}
+
+.blue-banner img {
+    position: absolute; /* Absolute positioning for the image */
+    bottom: 0; /* Align to the bottom */
+    right: 0; /* Align to the right */
+    width: 400px;
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure it sits behind text if needed */
+}
