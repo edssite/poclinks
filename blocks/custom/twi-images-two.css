@@ -1,0 +1,28 @@
+.two-images-two {
+    position: relative; /* Ensures the child elements can be positioned relative to this container */
+    width: 100%; /* Adjust as needed */
+    height: auto; /* You might need to set a height based on your layout */
+}
+
+.two-images-two > div {
+    top: 0;
+    left: 0;
+}
+
+.two-images-two > div img {
+    width: 500px;
+}
+
+.two-images-two > div:first-child {
+    z-index: 2;
+    transform: translate(-25%, 40%); /* Adjust the second value to move it down */
+}
+
+.two-images-two > div:last-child {
+    z-index: 1;
+    transform: translate(5%, 10%);
+}
+
+.two-images-two > div:last-child img {
+    width: 300px;
+}
