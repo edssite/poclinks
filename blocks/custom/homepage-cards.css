@@ -1,0 +1,57 @@
+.homepage-cards-title > div > div h3 {
+    font-family: "ibm-regular";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 125% */
+}
+
+.homepage-cards-title > div > div p {
+    font-family: "ibm-regular";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.homepage-cards {
+
+    position: relative; /* Positioning context for the pseudo-element */
+    text-align: center; /* Center the content horizontally */
+    display: flex;             /* Use flexbox for alignment */
+}
+
+.homepage-cards-wrapper {
+
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically (optional) */
+    height: 100%;              /* Ensure it takes up the full height if needed */
+}
+
+
+
+.homepage-cards > div > div:last-child p {
+    color: #000;
+    font-family: "ibm-regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.homepage-cards > div > div:first-child > picture img {
+
+    width: 500px;
+    height: 200px;
+    
+}
+
+
+
+.homepage-cards > div {
+
+    padding: 50px;
+    
+}
