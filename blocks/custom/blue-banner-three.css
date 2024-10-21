@@ -5,8 +5,9 @@
 }
 
 .blue-banner-three-container {
-    background-color: rgb(245, 171, 44);
+    background-color: var(--orange-cov);
     display: flex;
+    margin: 0px;
 }
 
 .blue-banner-three {
@@ -26,7 +27,7 @@
 }
 
 .blue-banner-three a.button:any-link {
-    background-color: rgb(245, 171, 44);
+    background-color: var(--orange-cov);
     font-size: 13px;
     color: white;
     font-family: ibm-light;

@@ -8,11 +8,21 @@
   background-color: rgb(226, 226, 226);
   padding: 20px;
   font-family: ibm-thin;
+  margin: 0px;
 }
 
+.video-var-two {
+  background-color: var(--orange-cov);
+}
 .video-container p {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 10px;
+}
+
+.video-container h2 {
+  width: 100%;
+  margin-top: 60px;
+  font-family: ibm-thin;
 }
 .video[data-embed-loaded='false']:not(.placeholder) {
   /* reserve an approximate space to avoid extensive layout shifts */

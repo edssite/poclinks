@@ -31,6 +31,7 @@
   --link-hover-color: #1d3ecf;
   --ibm-blue: rgb(44, 96, 245);
   --ibm-blue-hover: rgb(34, 82, 224);
+  --orange-cov: rgb(245, 171, 44);
 
   /* fonts */
   --body-font-family: ibm-regular, roboto-fallback, sans-serif;
