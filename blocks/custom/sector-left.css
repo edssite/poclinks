@@ -1,6 +1,9 @@
 .sector-left-container {
     display: flex;
     gap: 0; /* No gap between the divs */
+    margin: 0px;
+    padding-bottom: 30px;
+    padding-top: 40px;
 }
 
 .sector-left-wrapper {
@@ -26,10 +29,11 @@
 
 .sector-left > div:first-child > div:first-child h2 {
  font-family: ibm-thin;
+ font-size: 50px;
 }
 
 .sector-left > div:first-child > div:first-child p {
-    font-size: small;
+    font-size: large;
     width: 60%;
     color: gray;
 }
@@ -60,7 +64,7 @@
 }
 
 .sector-left > div:last-child > div img {
-    width: 100px;
+    width: 80px;
 }
 
 .sector-left > div:last-child > div:hover {
@@ -110,14 +114,14 @@
 
 .sector-left > div:first-child > div:first-child a.button:any-link {
     background-color: white;
-    font-size: 13px;
+    font-size: 20px;
     color: var(--ibm-blue);
     font-family: ibm-light;
     margin: 0;
     border-radius: 0;
     padding-left: 16px;
     padding-right: 16px;
-    width: 200px;
+    width: 400px;
     border-radius: 8px;
     border: 1px solid var(--ibm-blue);
 }
@@ -133,13 +137,13 @@
 }
 
 .sector-left > div:first-child > div:first-child a.button:any-link:hover {
-    background-color: var(--ibm-blue-hover);
+    background-color: gray;
     color: whitesmoke;
 }
 
 .sector-left h6 a:any-link {
     background-color: transparent;
-    font-size: 10px;
+    font-size: 15px;
     color: rgb(46, 46, 46);
     font-family: ibm-light;
     margin: 0;

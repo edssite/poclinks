@@ -3,9 +3,10 @@
 .sector-left-dark-container {
     display: flex;
     gap: 0; /* No gap between the divs */
-    background-color: #333;
-    padding-bottom: 30px;
-    padding-top: 40px;
+    background-color: rgb(44, 96, 245);
+    padding-bottom: 80px;
+    padding-top: 60px;
+    margin: 0px;
 }
 
 .sector-left-dark-wrapper {
@@ -32,10 +33,11 @@
 .sector-left-dark > div:first-child > div:first-child h2 {
  font-family: ibm-thin;
  color: whitesmoke;
+ font-size: 50px;
 }
 
 .sector-left-dark > div:first-child > div:first-child p {
-    font-size: small;
+    font-size: large;
     width: 60%;
     color: rgb(226, 225, 225);
 }
@@ -53,7 +55,7 @@
 
 /* Make the CIBC and BMO divs look like buttons */
 .sector-left-dark > div:last-child > div {
-    background-color: rgb(134, 134, 134);
+    background-color: rgb(230, 230, 230);
     padding: 30px;
     text-align: left; /* Center text inside the button */
     border-radius: 10px; /* Add rounded corners for a button look */
@@ -66,7 +68,7 @@
 }
 
 .sector-left-dark > div:last-child > div img {
-    width: 100px;
+    width: 70px;
 }
 
 .sector-left-dark > div:last-child > div:hover {
@@ -91,8 +93,8 @@
 
 .sector-left-dark h6 a:any-link {
     background-color: transparent;
-    font-size: 10px;
-    color: white;
+    font-size: 15px;
+    color: rgb(44, 96, 245);
     font-family: ibm-light;
     margin: 0;
     border-radius: 0;
@@ -131,14 +133,14 @@
 /* P Link */
 .sector-left-dark > div:first-child > div:first-child a.button:any-link {
     background-color: transparent;
-    font-size: 13px;
-    color: rgb(185, 204, 255);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
     font-family: ibm-light;
     margin: 0;
     border-radius: 0;
     padding-left: 16px;
     padding-right: 16px;
-    width: 200px;
+    width: 400px;
     border-radius: 8px;
     border: 1px solid rgb(97, 136, 244);
 }
