@@ -7,14 +7,9 @@
   grid-gap: 24px;
 }
 
-.cards-container {
-  background-color: rgb(44, 96, 245);
-  padding-top: 120px;
-  padding-bottom: 90px;
-  margin: 0;
-}
 .cards > ul > li {
   padding: 10px;
+  background-color: var(--background-color);
   transition: box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for the shadow and border */
   border: 1px solid transparent;
   background-image: linear-gradient(var(--background-color), var(--background-color)), 
@@ -39,7 +34,7 @@
 }
 
 .cards .cards-card-body p{
-  font-size: small;
+  font-size: large;
 }
 
 h3 {
