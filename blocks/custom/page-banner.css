@@ -3,8 +3,9 @@
     position: relative; /* Keep the flex layout for the banner, but ensure children can be positioned */
     padding: 0px;
     margin: 0px;
+    background-image: url('../../icons/page-banner-back.png');
+    background-size: cover;
 }
-
 
 
 .two-images {
@@ -19,18 +20,28 @@
 }
 
 .two-images > div img {
-    width: 350px;
+    width: 450px;
+    height: 450px; /* Ensure the height is equal to the width to make a perfect circle */
+    border-radius: 50%; /* Make the images circular */
+    object-fit: cover; /* This will ensure the images cover the area without stretching */
+}
+
+.two-images > div:last-child img {
+    width: 250px;
+    height: 250px
 }
 
 .two-images > div:first-child {
     z-index: 2;
-    transform: translate(-50%, 60%); /* Adjust the second value to move it down */
+    transform: translate(-30%, 20%); /* Adjust the second value to move it down */
 }
 
 .two-images > div:last-child {
     z-index: 1;
-    transform: translate(5%, 50%);
+    transform: translate(35%, 20%);
 }
+
+
 .page-banner > .default-content-wrapper {
     position: relative; /* If needed for other content inside */
     width: 30%;
@@ -39,7 +50,7 @@
 }
 
 .page-banner > .default-content-wrapper > h2 {
-    font-size: 50px;
+    font-size: 55px;
     font-family: ibm-thin;
 }
 
@@ -47,3 +58,65 @@
     color: gray;
     font-size: medium;
 }
+
+
+/*H4 Button */
+.page-banner h4 {
+    margin-top: 30px;
+}
+.page-banner h4 > a:any-link  {
+    background-color: var(--ibm-blue);
+    font-size: 15px;
+    color: white;
+    font-family: ibm-regular;
+    padding: 10px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid rgb(97, 136, 244);
+  }
+  
+  .page-banner h4 > a:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    margin-left: 30px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+  }
+  
+  .page-banner h4 > a:any-link:hover {
+    background-color: rgb(97, 136, 244);
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+
+  /*H5 Button */
+.page-banner h5 {
+    margin-top: 30px;
+}
+.page-banner h5 > a:any-link  {
+    background-color: var(--ibm-blue);
+    font-size: 15px;
+    color: white;
+    font-family: ibm-regular;
+    padding: 10px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid rgb(97, 136, 244);
+  }
+  
+  .page-banner h5 > a:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 18px; /* Make the arrow bigger */
+    margin-left: 30px; /* Move the arrow more to the right */
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
+  }
+  
+  .page-banner h5 > a:any-link:hover {
+    background-color: rgb(97, 136, 244);
+    color: whitesmoke;
+    text-decoration: none;
+  }
