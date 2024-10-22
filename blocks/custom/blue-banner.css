@@ -16,20 +16,20 @@
 
 .blue-banner h3 {
     color: rgb(50, 50, 50);
-    font-size: 40px;
+    font-size: 50px;
     font-family: ibm-thin;
 }
 
 .blue-banner p {
     color: rgb(50, 50, 50);
-    font-size: small;
-    font-family: ibm-regular;
+    font-size: x-large;
+    font-family: ibm-thin;
     padding-bottom: 30px;
 }
 
 .blue-banner a.button:any-link {
     background-color: var(--ibm-blue);
-    font-size: 13px;
+    font-size: 20px;
     color: white;
     font-family: ibm-light;
     margin: 0;

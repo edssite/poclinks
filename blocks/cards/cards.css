@@ -21,6 +21,8 @@
                     linear-gradient(to bottom, darkgray, white); /* Gradient from dark gray to white, top to bottom */
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  position: relative;
+  height: 450px;
 }
 
 .cards > ul > li:hover {
@@ -50,67 +52,39 @@ h2 {
   font-size: large;
   font-family: ibm-regular;
 }
+
+.cards > ul > li h4 {
+  position: absolute;
+  bottom: 30px; /* Adjusts how far from the bottom edge */
+  left: 20px; /* Adjusts how far from the left edge */
+  margin: 0; /* Reset margin */
+}
+
 /*H4 Button */
 h4 > a:any-link  {
-  background-color: transparent;
-  color: rgb(234, 91, 91);
-  font-size: medium;
-  margin: 0;
-  padding: 1px;
+  background-color: var(--ibm-blue);
+  font-size: 15px;
+  color: white;
+  font-family: ibm-regular;
+  padding: 10px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid rgb(97, 136, 244);
 }
 
 h4 > a:any-link::after {
-  content: "";
+  content: "→"; /* Unicode for right arrow */
   display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 6px solid red;
-  transform: rotate(90deg);
-  margin-left: 10px;
-  transition: transform 0.3s ease, border-bottom-width 0.3s ease;
+  font-size: 18px; /* Make the arrow bigger */
+  margin-left: 30px; /* Move the arrow more to the right */
+  transition: transform 0.3s ease;
+  vertical-align: middle; /* Align arrow with the text */
 }
 
 h4 > a:any-link:hover {
-  text-decoration: underline;
-}
-
-h4 > a:any-link:hover::after {
-  transform: scale(1.2) rotate(90deg);
-  border-bottom-width: 8px;
-}
-/** NORMAL TEXT BUTTON */
-.cards-card-body .button-container a.button:any-link  {
-  background-color: transparent;
-  color: rgb(158, 158, 158);
-  font-size: medium;
-  margin: 0;
-  padding: 1px;
-}
-
-.cards-card-body .button-container a.button:any-link::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 6px solid rgb(158, 158, 158);
-  transform: rotate(90deg);
-  margin-left: 10px;
-  transition: transform 0.3s ease, border-bottom-width 0.3s ease;
-}
-
-.cards-card-body .button-container a.button:any-link:hover {
-  text-decoration: underline;
-  color: rgb(55, 55, 174);
-}
-
-.cards-card-body .button-container a.button:any-link:hover::after {
-  transform: scale(1.2) rotate(90deg);
-  border-bottom-width: 8px;
-  color: rgb(55, 55, 174);
+  background-color: rgb(97, 136, 244);
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 
