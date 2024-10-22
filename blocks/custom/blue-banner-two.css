@@ -7,7 +7,7 @@
 }
 
 .blue-banner-two-container {
-    background-color: rgb(44, 96, 245);
+    background-color: rgb(246, 246, 246);
     padding: 0;
     margin: 0;
 }
@@ -17,7 +17,7 @@
 }
 
 .blue-banner-two h3 {
-    color: white;
+    color: var(--ibm-blue-hover);
     font-size: 40px;
     font-family: ibm-thin;
     padding: 0;
@@ -25,16 +25,15 @@
 }
 
 .blue-banner-two p {
-    color: whitesmoke;
-    font-size: medium;
+    color: black;
+    font-size: large;
     padding-bottom: 30px;
-    padding: 10px;
     margin: 0;
 }
 
 .blue-banner-two a.button:any-link {
     background-color: rgb(44, 96, 245);
-    font-size: 13px;
+    font-size: 20px;
     color: whitesmoke;
     font-family: ibm-light;
     margin: 0;

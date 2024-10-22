@@ -5,7 +5,7 @@
 }
 
 .video-container {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(216, 225, 250);
   padding: 20px;
   font-family: ibm-thin;
   margin: 0px;
@@ -17,6 +17,13 @@
 .video-container p {
   width: 100%;
   margin-top: 10px;
+}
+
+
+.video-container > .default-content-wrapper p {
+  color: rgb(65, 65, 65);
+  font-size: large;
+  font-family: ibm-regular;
 }
 
 .video-container h2 {

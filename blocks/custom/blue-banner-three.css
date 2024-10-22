@@ -16,19 +16,19 @@
 
 .blue-banner-three h3 {
     color: black;
-    font-size: 40px;
+    font-size: 45px;
     font-family: ibm-thin;
 }
 
 .blue-banner-three p {
     color: black;
-    font-size: medium;
+    font-size: large;
     padding-bottom: 30px;
 }
 
 .blue-banner-three a.button:any-link {
-    background-color: var(--orange-cov);
-    font-size: 13px;
+    background-color: var(--ibm-blue);
+    font-size: 20px;
     color: white;
     font-family: ibm-light;
     margin: 0;
@@ -37,7 +37,6 @@
     padding-right: 16px;
     width: 250px;
     border-radius: 8px;
-    border: 1px solid white;
 }
 
 .blue-banner-three a.button:any-link::after {
