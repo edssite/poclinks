@@ -1,4 +1,5 @@
 .homepage-cards-title > div > div h3 {
+    text-align: center;
     font-family: "ibm-regular";
     font-size: 32px;
     font-style: normal;
@@ -7,11 +8,16 @@
 }
 
 .homepage-cards-title > div > div p {
+    text-align: center;
     font-family: "ibm-regular";
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.homepage-cards-title{
+    padding-top: 50px;
 }
 
 
@@ -41,6 +47,8 @@
 }
 
 
+
+
 .homepage-cards > div > div:first-child > picture img {
 
     width: 500px;
@@ -54,4 +62,30 @@
 
     padding: 50px;
     
+}
+
+.homepage-cards a.button:any-link {
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--ibm-blue);
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+
+.homepage-cards a.button:any-link::after {
+    content: "→"; /* Unicode for right arrow */
+    display: inline-block;
+    font-size: 14px; /* Make the arrow bigger */
+    font-weight: lighter; /* Adjust the weight as per your need */
+    margin-left: 10px; /* Move the arrow more to the right */
+    margin-bottom: 4px;
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Align arrow with the text */
 }

@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
- @import url('../blocks/custom/heading.css');
+ @import url('../blocks/custom/homepage/heading.css');
  @import url('../blocks/custom/page-banner.css');
  @import url('../blocks/custom/sector-left.css');
  @import url('../blocks/custom/sector-left-dark.css');
@@ -19,7 +19,9 @@
  @import url('../blocks/custom/blue-banner-two.css');
  @import url('../blocks/custom/blue-banner-three.css');
  @import url('../blocks/custom/twi-images-two.css');
- @import url('../blocks/custom/homepage-cards.css');
+ @import url('../blocks/custom/homepage/homepage-cards.css');
+ @import url('../blocks/custom/homepage/clients.css');
+ @import url('../blocks/custom/homepage/companies-carousel.css');
 
 :root {
   /* colors */
