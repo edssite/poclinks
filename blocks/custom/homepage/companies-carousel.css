@@ -1,0 +1,17 @@
+
+
+.companies-carousel-container,
+.companies-carousel-wrapper,
+.companies-carousel {
+    width: 100%; /* Make the parent containers take full width */
+    padding: 0;  /* Remove any default padding */
+    margin: 0;   /* Remove any default margin */
+}
+
+
+.companies-carousel > div > div > picture img {
+    width: 100%;  /* Make the image take full width of its parent */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+

@@ -1,0 +1,49 @@
+.client-cards-container {
+    background-color: #e5f6ff;
+    height: 600px;
+    padding-bottom: 50px;
+}
+
+.client-cards {
+    display: flex;
+}
+
+.client-cards > div {
+    background-color: white;
+    margin: 50px;
+    padding: 18px;
+    width: 364px;
+    height: 250px;
+}
+
+.client-cards > div > div p:first-child {
+    color: #717171;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.client-cards > div > div h4 {
+    color: #000;
+    font-family: "IBM Plex Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.client-cards > div > div {
+    position: relative; /* Establishes a positioning context */
+    height: 100%; /* Ensure the div has a defined height */
+}
+
+
+.client-cards > div > div p:last-child > picture img {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position to the left */}
