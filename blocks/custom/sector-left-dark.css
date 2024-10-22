@@ -4,6 +4,8 @@
     display: flex;
     gap: 0; /* No gap between the divs */
     background-color: rgb(44, 96, 245);
+    background-image: url('../../icons/back-sector.png');
+    background-size: cover;
     padding-bottom: 80px;
     padding-top: 80px;
     margin: 0px;
@@ -52,7 +54,6 @@
 .sector-left-dark > div:last-child {
     display: flex;
     gap: 20px;
-
 }
 
 
@@ -73,7 +74,6 @@
 .sector-left-dark > div:last-child > div img {
     width: 70px;
 }
-
 
 .sector-left-dark > div:last-child > div:hover {
     transform: scale(1.05); /* Slightly increase the size on hover */

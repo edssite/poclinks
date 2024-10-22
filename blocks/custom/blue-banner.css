@@ -1,12 +1,11 @@
 
 .blue-banner-wrapper {
-    background-color: rgb(22,22,22);
+    background-color: rgb(228, 228, 228);
     position: relative;
 
 }
 
 .blue-banner-container {
-    background-color: rgb(22,22,22);
     margin: 0px;
 }
 
@@ -15,15 +14,15 @@
 }
 
 .blue-banner h3 {
-    color: white;
+    color: rgb(50, 50, 50);
     font-size: 40px;
     font-family: ibm-thin;
 }
 
 .blue-banner p {
-    color: whitesmoke;
+    color: rgb(50, 50, 50);
     font-size: small;
-    font-family: ibm-thin;
+    font-family: ibm-regular;
     padding-bottom: 30px;
 }
 

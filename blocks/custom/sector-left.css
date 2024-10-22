@@ -4,6 +4,8 @@
     margin: 0px;
     padding-bottom: 30px;
     padding-top: 40px;
+    background-image: url('../../icons/back-sector-light.png');
+    background-size: cover;
 }
 
 .sector-left-wrapper {
