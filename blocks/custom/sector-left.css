@@ -69,7 +69,7 @@
 
 .sector-left > div:last-child > div:hover {
     transform: scale(1.05); /* Slightly increase the size on hover */
-    background-color: #dbf3f9; /* Change background color on hover */
+    background-color: white; /* Change background color on hover */
     color: #333; /* Optionally, change text color on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow for more emphasis on hover */
 }
@@ -113,32 +113,32 @@
 
 
 .sector-left > div:first-child > div:first-child a.button:any-link {
-    background-color: white;
+    background-color: var(--ibm-blue);
     font-size: 20px;
-    color: var(--ibm-blue);
-    font-family: ibm-light;
+    color: white;
+    font-family: ibm-regular;
     margin: 0;
     border-radius: 0;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 400px;
     border-radius: 8px;
-    border: 1px solid var(--ibm-blue);
 }
 
 .sector-left > div:first-child > div:first-child a.button:any-link::after {
     content: "→"; /* Unicode for right arrow */
     display: inline-block;
     font-size: 18px; /* Make the arrow bigger */
-    font-weight: lighter; /* Adjust the weight as per your need */
     margin-left: 50px; /* Move the arrow more to the right */
     transition: transform 0.3s ease;
     vertical-align: middle; /* Align arrow with the text */
 }
 
 .sector-left > div:first-child > div:first-child a.button:any-link:hover {
-    background-color: gray;
-    color: whitesmoke;
+    background-color: gainsboro;
+    color: var(--ibm-blue);
 }
 
 .sector-left h6 a:any-link {
@@ -152,4 +152,8 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
+}
+
+.sector-left h6 a:any-lin:hover {
+    color: var(--ibm-blue);
 }

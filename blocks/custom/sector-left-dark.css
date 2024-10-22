@@ -5,7 +5,7 @@
     gap: 0; /* No gap between the divs */
     background-color: rgb(44, 96, 245);
     padding-bottom: 80px;
-    padding-top: 60px;
+    padding-top: 80px;
     margin: 0px;
 }
 
@@ -52,6 +52,7 @@
 .sector-left-dark > div:last-child {
     display: flex;
     gap: 20px;
+
 }
 
 
@@ -73,9 +74,10 @@
     width: 70px;
 }
 
+
 .sector-left-dark > div:last-child > div:hover {
     transform: scale(1.05); /* Slightly increase the size on hover */
-    background-color: rgb(210, 210, 210); /* Change background color on hover */
+    background-color: white; /* Change background color on hover */
     color: #f5f5f5; /* Optionally, change text color on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow for more emphasis on hover */
 }
@@ -106,6 +108,19 @@
     left: 20px;
 }
 
+.sector-left-dark h6 a:any-link:hover {
+    font-size: 15px;
+    color: rgb(44, 96, 245);
+    font-family: ibm-light;
+    margin: 0;
+    border-radius: 0;
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+
 
 /* Show the text on hover */
 .sector-left-dark > div:last-child > div:hover p:not(:has(img)) {
@@ -119,7 +134,7 @@
 .sector-left-dark > div:last-child > div::after {
     content: "➔"; /* Unicode for an arrow pointing right */
     font-size: 12px; /* Adjust size */
-    color: rgb(255, 255, 255); /* Color of the arrow */
+    color: rgb(33, 33, 33); /* Color of the arrow */
     position: absolute;
     top: 10px; /* Position it in the top right */
     right: 10px; /* Align it to the right */
@@ -138,14 +153,16 @@
 
 /* P Link */
 .sector-left-dark > div:first-child > div:first-child a.button:any-link {
-    background-color: transparent;
+    background-color: white;
     font-size: 20px;
-    color: rgb(255, 255, 255);
-    font-family: ibm-light;
+    color: rgb(97, 136, 244);
+    font-family: ibm-regular;
     margin: 0;
     border-radius: 0;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 400px;
     border-radius: 8px;
     border: 1px solid rgb(97, 136, 244);
@@ -155,7 +172,6 @@
     content: "→"; /* Unicode for right arrow */
     display: inline-block;
     font-size: 18px; /* Make the arrow bigger */
-    font-weight: lighter; /* Adjust the weight as per your need */
     margin-left: 50px; /* Move the arrow more to the right */
     transition: transform 0.3s ease;
     vertical-align: middle; /* Align arrow with the text */
@@ -165,6 +181,7 @@
     background-color: rgb(97, 136, 244);
     color: whitesmoke;
 }
+
 
 
 /* H4 Link */
