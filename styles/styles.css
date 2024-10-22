@@ -19,9 +19,13 @@
  @import url('../blocks/custom/blue-banner-two.css');
  @import url('../blocks/custom/blue-banner-three.css');
  @import url('../blocks/custom/twi-images-two.css');
+<<<<<<< HEAD
  @import url('../blocks/custom/homepage/homepage-cards.css');
  @import url('../blocks/custom/homepage/clients.css');
  @import url('../blocks/custom/homepage/companies-carousel.css');
+=======
+ @import url('../blocks/custom/blue-banner-four.css');
+>>>>>>> main
 
 :root {
   /* colors */
@@ -33,6 +37,7 @@
   --link-hover-color: #1d3ecf;
   --ibm-blue: rgb(44, 96, 245);
   --ibm-blue-hover: rgb(34, 82, 224);
+  --orange-cov: rgb(245, 171, 44);
 
   /* fonts */
   --body-font-family: ibm-regular, roboto-fallback, sans-serif;

@@ -1,7 +1,10 @@
 .page-banner {
     display: flex;
     position: relative; /* Keep the flex layout for the banner, but ensure children can be positioned */
+    padding: 0px;
+    margin: 0px;
 }
+
 
 
 .two-images {
@@ -21,16 +24,18 @@
 
 .two-images > div:first-child {
     z-index: 2;
-    transform: translate(-30%, 60%); /* Adjust the second value to move it down */
+    transform: translate(-50%, 60%); /* Adjust the second value to move it down */
 }
 
 .two-images > div:last-child {
     z-index: 1;
-    transform: translate(25%, 50%);
+    transform: translate(5%, 50%);
 }
 .page-banner > .default-content-wrapper {
     position: relative; /* If needed for other content inside */
     width: 30%;
+    padding-top: 0px;
+    margin: 100px;
 }
 
 .page-banner > .default-content-wrapper > h2 {

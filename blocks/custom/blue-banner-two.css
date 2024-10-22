@@ -1,33 +1,41 @@
 
 .blue-banner-two-wrapper {
     position: relative;
+    padding: 0;
+    margin: 0;
 
 }
 
 .blue-banner-two-container {
     background-color: rgb(44, 96, 245);
+    padding: 0;
+    margin: 0;
 }
 
 .blue-banner-two {
-    padding: 50px;
+    padding: 20px;
 }
 
 .blue-banner-two h3 {
     color: white;
     font-size: 40px;
     font-family: ibm-thin;
+    padding: 0;
+    margin: 0;
 }
 
 .blue-banner-two p {
     color: whitesmoke;
     font-size: medium;
     padding-bottom: 30px;
+    padding: 10px;
+    margin: 0;
 }
 
 .blue-banner-two a.button:any-link {
-    background-color: whitesmoke;
+    background-color: rgb(44, 96, 245);
     font-size: 13px;
-    color: rgb(44, 96, 245);
+    color: whitesmoke;
     font-family: ibm-light;
     margin: 0;
     border-radius: 0;
@@ -35,7 +43,7 @@
     padding-right: 16px;
     width: 250px;
     border-radius: 8px;
-    border: 1px solid var(--ibm-blue);
+    border: 1px solid whitesmoke;
 }
 
 .blue-banner-two a.button:any-link::after {
