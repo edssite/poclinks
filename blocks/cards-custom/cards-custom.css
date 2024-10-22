@@ -14,12 +14,12 @@
 }
 
 .cards-custom > ul > li {
-  background-color: rgb(243, 243, 243);
+  background-color: white;
   transition: box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for the shadow and border */
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  position: relative;
 }
-
 
 .cards-custom .cards-card-body {
   margin: 16px;
@@ -28,6 +28,8 @@
 
 .cards-custom .cards-card-body h2 {
   font-size: medium;
+  font-size: 20px;
+  font-family: ibm-thin;
 }
 
 .cards-custom .cards-card-body p{
@@ -39,15 +41,16 @@ h3 {
  font-size: small;
 }
 
-h2 {
-  font-size: large;
-  font-family: ibm-regular;
-}
 
 .cards-custom .cards-card-image {
   line-height: 0;
 }
+
 .cards-custom > ul > li img {
   width: 100%;
   object-fit: cover;
+  filter: grayscale(100%); /* Apply grayscale filter */
+  position: relative; /* Position the image for overlay placement */
 }
+
+
